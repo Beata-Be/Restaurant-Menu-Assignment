@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu Sections</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #2c3e50;
+            font-family: 'Trebuchet MS', sans-serif;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        /* Essential Div Requirements: 400px x 550px */
+        .menu-card {
+            width: 400px;
+            height: 550px;
+            box-sizing: border-box;
+            padding: 40px; /* Padding requirement */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.4em;
+            margin-bottom: 30px; /* Margin requirement */
+            border-bottom: 3px solid #fff;
+        }
+
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            margin: 20px 0; /* Margin requirement */
+            font-size: 1.3em;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed rgba(255,255,255,0.5);
+        }
+
+        /* Appetizers & Drinks Menu */
+        .starters-drinks {
+            background-image: url('https://unsplash.com');
+            background-position: center; /* Background property */
+            border: 10px groove #e67e22; /* Border requirement */
+            margin-right: 10px; /* Margin requirement */
+        }
+
+        /* Main Courses Menu */
+        .main-courses {
+            background-image: url('https://unsplash.com');
+            background-repeat: no-repeat; /* Background property */
+            border: 10px double #27ae60; /* Border requirement */
+            margin-top: 15px; /* Margin requirement */
+        }
+
+        /* Desserts Menu */
+        .desserts {
+            background-image: url('https://unsplash.com');
+            background-position: bottom; /* Background property */
+            border: 10px inset #9b59b6; /* Border requirement */
+            margin-left: 10px; /* Margin requirement */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu 1: Appetizers & Drinks -->
+    <div class="menu-card starters-drinks">
+        <h1>Starters & Drinks</h1>
+        <ul class="item-list">
+            <li>Garlic Bread <span>$5</span></li>
+            <li>Green Salad <span>$7</span></li>
+            <li>Tomato Soup <span>$6</span></li>
+            <li>Fresh Juice <span>$4</span></li>
+            <li>Hot Tea <span>$3</span></li>
+            <li>Mineral Water <span>$2</span></li>
+        </ul>
+    </div>
+
+    <!-- Menu 2: Main Courses -->
+    <div class="menu-card main-courses">
+        <h1>Main Courses</h1>
+        <ul class="item-list">
+            <li>Beef Burger <span>$14</span></li>
+            <li>Grilled Chicken <span>$16</span></li>
+            <li>Pasta Carbonara <span>$13</span></li>
+            <li>Fried Fish <span>$18</span></li>
+            <li>Vegetable Rice <span>$11</span></li>
+            <li>Pizza Margherita <span>$12</span></li>
+        </ul>
+    </div>
+
+    <!-- Menu 3: Desserts -->
+    <div class="menu-card desserts">
+        <h1>Desserts</h1>
+        <ul class="item-list">
+            <li>Chocolate Cake <span>$8</span></li>
+            <li>Apple Pie <span>$7</span></li>
+            <li>Ice Cream <span>$5</span></li>
+            <li>Fruit Salad <span>$6</span></li>
+            <li>Sweet Pancake <span>$9</span></li>
+            <li>Cheese Cake <span>$8</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>
